@@ -1,0 +1,17 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          authing:
+            client-id: 61319680ea8b30c9ca9ca071
+            client-secret: cc8a53d7e22ce6b845330ced6cc5d9f2
+            redirect-uri: http://localhost:8080/login/oauth2/code/authing
+            client-authentication-method: post
+            scope:
+              - openid
+              - profile
+        provider:
+          authing:
+            issuer-uri: https://cjtjls-demo.authing.cn/oidc
+            user-name-attribute: preferred_username
