@@ -6,8 +6,9 @@ spring:
           authing:
             client-id: 61319680ea8b30c9ca9ca071
             client-secret: cc8a53d7e22ce6b845330ced6cc5d9f2
-            redirect-uri: http://localhost:8080/login/oauth2/code/authing
+            redirect-uri: http://localhost:8080/callback
             client-authentication-method: post
+            authorization-grant-type: authorization_code
             scope:
               - openid
               - profile
