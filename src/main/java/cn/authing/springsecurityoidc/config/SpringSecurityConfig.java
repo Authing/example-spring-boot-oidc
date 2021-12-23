@@ -12,6 +12,7 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
+        //注意此处 callback 是在官网配置的回调地址后缀
         http.formLogin().disable();
         http.csrf().and().cors().disable();
         http.authorizeRequests()
