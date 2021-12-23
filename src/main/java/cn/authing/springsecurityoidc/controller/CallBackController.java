@@ -22,10 +22,10 @@ public class CallBackController {
 
         Map<String,Object> paramMap = new HashMap<>();
         paramMap.put("code",code);
-        paramMap.put("client_id","61319680ea8b30c9ca9ca071");
-        paramMap.put("client_secret","cc8a53d7e22ce6b845330ced6cc5d9f2");
+        paramMap.put("client_id","{替换为你的 client_id 如：61319680ea8b30c9ca9ca071}");
+        paramMap.put("client_secret","{替换为你的 client-secret 如：cc8a53d7e22ce6b845330ced6cc5d9f2}");
         paramMap.put("grant_type","authorization_code");
-        paramMap.put("redirect_uri","http://localhost:8080/callback");
+        paramMap.put("redirect_uri","{替换为你的 redirect-uri 如http://localhost:8080/callback}");
         String result = HttpUtil.post("https://cjtjls-demo.authing.cn/oidc/token", paramMap);
         return result;
     }
