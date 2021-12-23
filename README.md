@@ -96,6 +96,7 @@
             client-secret: {替换为你的App Secret如：931f19ce2161e5560c072f586c706ee6}
             redirect-uri: '{替换为登录的回调地址}'
             client-authentication-method: post
+            authorization-grant-type: authorization_code
             scope:
               - openid
               - profile
